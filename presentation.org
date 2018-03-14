@@ -1,0 +1,75 @@
+* Resources
+  - [[https://drive.google.com/drive/u/0/folders/1Yxj9OBGIWcbHoHPgwoU0kEoxn_60bCrN][google drive folder]]
+
+* Problem Statement
+  Underactuated flying vehicle that is more cost and energy efficient.
+* Motivation
+  Modern Rocket uses 2 DOF revolute joint to turn the nozzle to control the thrust. Challenges are it has to resist a very high temperature and the joint need a large amount of energy to keep the nozzle in a specific direction.
+  Instead, a precisely controlled off-center mass in the front of the rocket can create a torque that steers the Rocket.
+** TODO Add pictures to the slides -- structure of modern Rocket, look more into how modern Rocket operates
+* Scope
+  In this project we will focus on the Mathematical Formulation and the design of controller. We will build on a working quadcopter where all 4 propellers will provide same constant thrust.
+** TODO Add quadcopter pics?
+
+* Detailed Context / Related work
+** TODO Draw a box diagram for our system
+** TODO Maybe look more into [[https://www.upenn.edu/spotlights/meet-piccolissimo-worlds-smallest-self-powered-controllable-flying-vehicle][Piccolissimo]] and relate the two?  
+
+* Tasks breakdown, potential challenges
+  1) Mathematical Formulation
+     - Analysis of the system dynamic
+     - How does a spinning mass create torque
+     - How does the created torque affect the orientation of the system
+     - The desired roll / pitch angle for system stability
+     - The spinning mass dynamic
+  2) Pick our components
+     - Hackable Quadcopter
+     - A motor with pulse control that we can make the spinning mass stay longer in one direction
+     - What mass to attach? What arm to connect motor and mass?
+     - Mechanical device that enable us to mount our system on the Quadcopter: MAY NEED 3D PRINTING
+     - Microcontroller
+     - IMU for sensor measurements
+     - Wireless module for communication
+     - Battery
+  3) Simulation environment: maybe challenging because we working in 3D
+     - Simulation in Matlab
+     - State (orientation) estimation
+     - How does motor inputs generate torque and in turn affect the orientation
+     - Controller simulation
+  4) Hack the quadcopter
+     - Be able to control the 4 propellers using our wireless module thru our microcontroller
+  5) Sensor Fusion
+     - Configure the IMU, making use of accelerometer and gyroscope
+     - Determine the rate of roll/pitch angle change
+  6) Control circuit for motor
+     - make sure the motor is doing what it is supposed to before mounting it on quadcopter
+     - Design a test to show that the off-center mass is leaning on one side
+  7) Putting it together
+     - Integrate all our working components (wireless communication, motor pulse control, sensor fusion, simulation works)
+     - Mount it on the quadcopter
+  8) Controller Design
+     - Real experimental results should be available since we already built our system and mount it on quadcopter 
+     - controls the input to the motor and the propellers, by taking in state estimation and sensor measurements
+     - Responsible to achieve the desired roll/pitch angle to steer the vehicle
+     - Moreover, to stabilize the quadcopter from a moving position.
+  9) End-to-End testing
+  10) Documentation
+** TODO Put the above tasks breakdown in the slides? Each big topic (1,2,3) with one slide?
+* Project plan
+  | Week | Milestone(s)                | Demonstration                                            |
+  |------+-----------------------------+----------------------------------------------------------|
+  |    1 | Pick our components         | Reason choosing these parts                              |
+  |  1-2 | Hack the quadcopter         | Controll the quadcopter with Arduino code                |
+  |  1-2 | Mathematcial Formulation    | Show our mathematical model                              |
+  |    3 | Sensor Fusion               | Demonstrate angle change / vector graph                  |
+  |  3-4 | Control circuit for motor   | Test: falling on desire side                             |
+  |  3-4 | Develop Matlab Simulation   | Show simulation graph                                    |
+  |    5 | Putting everything together | Show our modified quadcopter: video demo?                |
+  |  5-8 | Controller Design           | Show how quadcopter reacts with different controllers    |
+  |    9 | End-to-end testing          | Gather experimental results that supports our conclusion |
+  |   10 | Documentation               | Document all our work                                    |
+** TODO Create a Gantt chart based on the above table    
+* Expected Conclusion
+  We would like to conclude that a off center spinning mass is able to steer the quadcopter using the system's dynamic; and that such principle can be apply on Rocket for more effective way of stering a rocket.
+** TODO PUTIT ON THE SLIDE! I am bad with wording, maybe refine the above sentence a bit / any missing conclusion you guys want to draw?
+
