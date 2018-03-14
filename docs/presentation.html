@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2018-03-14 Wed 13:36 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Wilson Chang" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org9ba8fae">1. Resources</a></li>
+<li><a href="#org42bae37">2. Problem Statement</a></li>
+<li><a href="#org62516df">3. Motivation</a>
+<ul>
+<li><a href="#org37ae698">3.1. <span class="todo TODO">TODO</span> Add pictures to the slides &#x2013; structure of modern Rocket, look more into how modern Rocket operates</a></li>
+</ul>
+</li>
+<li><a href="#org6234c0e">4. Scope</a>
+<ul>
+<li><a href="#org47756e1">4.1. <span class="todo TODO">TODO</span> Add quadcopter pics?</a></li>
+</ul>
+</li>
+<li><a href="#org43fdbe3">5. Detailed Context / Related work</a>
+<ul>
+<li><a href="#org6dfbe00">5.1. <span class="todo TODO">TODO</span> Draw a box diagram for our system</a></li>
+<li><a href="#orga498b46">5.2. <span class="todo TODO">TODO</span> Maybe look more into Piccolissimo and relate the two?</a></li>
+</ul>
+</li>
+<li><a href="#orga442961">6. Tasks breakdown, potential challenges</a>
+<ul>
+<li><a href="#org0bf8a38">6.1. <span class="todo TODO">TODO</span> Put the above tasks breakdown in the slides? Each big topic (1,2,3) with one slide?</a></li>
+</ul>
+</li>
+<li><a href="#orgeee3acc">7. Project plan</a>
+<ul>
+<li><a href="#org290ecb7">7.1. <span class="todo TODO">TODO</span> Create a Gantt chart based on the above table</a></li>
+</ul>
+</li>
+<li><a href="#orgf06a41c">8. Expected Conclusion</a>
+<ul>
+<li><a href="#org7f38177">8.1. <span class="todo TODO">TODO</span> PUTIT ON THE SLIDE! I am bad with wording, maybe refine the above sentence a bit / any missing conclusion you guys want to draw?</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9ba8fae" class="outline-2">
+<h2 id="org9ba8fae"><span class="section-number-2">1</span> Resources</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li><a href="https://drive.google.com/drive/u/0/folders/1Yxj9OBGIWcbHoHPgwoU0kEoxn_60bCrN">google drive folder</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org42bae37" class="outline-2">
+<h2 id="org42bae37"><span class="section-number-2">2</span> Problem Statement</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Underactuated flying vehicle that is more cost and energy efficient.
+</p>
+</div>
+</div>
+<div id="outline-container-org62516df" class="outline-2">
+<h2 id="org62516df"><span class="section-number-2">3</span> Motivation</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Modern Rocket uses 2 DOF revolute joint to turn the nozzle to control the thrust. Challenges are it has to resist a very high temperature and the joint need a large amount of energy to keep the nozzle in a specific direction.
+Instead, a precisely controlled off-center mass in the front of the rocket can create a torque that steers the Rocket.
+</p>
+</div>
+<div id="outline-container-org37ae698" class="outline-3">
+<h3 id="org37ae698"><span class="section-number-3">3.1</span> <span class="todo TODO">TODO</span> Add pictures to the slides &#x2013; structure of modern Rocket, look more into how modern Rocket operates</h3>
+</div>
+</div>
+<div id="outline-container-org6234c0e" class="outline-2">
+<h2 id="org6234c0e"><span class="section-number-2">4</span> Scope</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+In this project we will focus on the Mathematical Formulation and the design of controller. We will build on a working quadcopter where all 4 propellers will provide same constant thrust.
+</p>
+</div>
+<div id="outline-container-org47756e1" class="outline-3">
+<h3 id="org47756e1"><span class="section-number-3">4.1</span> <span class="todo TODO">TODO</span> Add quadcopter pics?</h3>
+</div>
+</div>
+
+<div id="outline-container-org43fdbe3" class="outline-2">
+<h2 id="org43fdbe3"><span class="section-number-2">5</span> Detailed Context / Related work</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org6dfbe00" class="outline-3">
+<h3 id="org6dfbe00"><span class="section-number-3">5.1</span> <span class="todo TODO">TODO</span> Draw a box diagram for our system</h3>
+</div>
+<div id="outline-container-orga498b46" class="outline-3">
+<h3 id="orga498b46"><span class="section-number-3">5.2</span> <span class="todo TODO">TODO</span> Maybe look more into <a href="https://www.upenn.edu/spotlights/meet-piccolissimo-worlds-smallest-self-powered-controllable-flying-vehicle">Piccolissimo</a> and relate the two?</h3>
+</div>
+</div>
+
+<div id="outline-container-orga442961" class="outline-2">
+<h2 id="orga442961"><span class="section-number-2">6</span> Tasks breakdown, potential challenges</h2>
+<div class="outline-text-2" id="text-6">
+<ol class="org-ol">
+<li>Mathematical Formulation
+<ul class="org-ul">
+<li>Analysis of the system dynamic</li>
+<li>How does a spinning mass create torque</li>
+<li>How does the created torque affect the orientation of the system</li>
+<li>The desired roll / pitch angle for system stability</li>
+<li>The spinning mass dynamic</li>
+</ul></li>
+<li>Pick our components
+<ul class="org-ul">
+<li>Hackable Quadcopter</li>
+<li>A motor with pulse control that we can make the spinning mass stay longer in one direction</li>
+<li>What mass to attach? What arm to connect motor and mass?</li>
+<li>Mechanical device that enable us to mount our system on the Quadcopter: MAY NEED 3D PRINTING</li>
+<li>Microcontroller</li>
+<li>IMU for sensor measurements</li>
+<li>Wireless module for communication</li>
+<li>Battery</li>
+</ul></li>
+<li>Simulation environment: maybe challenging because we working in 3D
+<ul class="org-ul">
+<li>Simulation in Matlab</li>
+<li>State (orientation) estimation</li>
+<li>How does motor inputs generate torque and in turn affect the orientation</li>
+<li>Controller simulation</li>
+</ul></li>
+<li>Hack the quadcopter
+<ul class="org-ul">
+<li>Be able to control the 4 propellers using our wireless module thru our microcontroller</li>
+</ul></li>
+<li>Sensor Fusion
+<ul class="org-ul">
+<li>Configure the IMU, making use of accelerometer and gyroscope</li>
+<li>Determine the rate of roll/pitch angle change</li>
+</ul></li>
+<li>Control circuit for motor
+<ul class="org-ul">
+<li>make sure the motor is doing what it is supposed to before mounting it on quadcopter</li>
+<li>Design a test to show that the off-center mass is leaning on one side</li>
+</ul></li>
+<li>Putting it together
+<ul class="org-ul">
+<li>Integrate all our working components (wireless communication, motor pulse control, sensor fusion, simulation works)</li>
+<li>Mount it on the quadcopter</li>
+</ul></li>
+<li>Controller Design
+<ul class="org-ul">
+<li>Real experimental results should be available since we already built our system and mount it on quadcopter</li>
+<li>controls the input to the motor and the propellers, by taking in state estimation and sensor measurements</li>
+<li>Responsible to achieve the desired roll/pitch angle to steer the vehicle</li>
+<li>Moreover, to stabilize the quadcopter from a moving position.</li>
+</ul></li>
+<li>End-to-End testing</li>
+<li>Documentation</li>
+</ol>
+</div>
+<div id="outline-container-org0bf8a38" class="outline-3">
+<h3 id="org0bf8a38"><span class="section-number-3">6.1</span> <span class="todo TODO">TODO</span> Put the above tasks breakdown in the slides? Each big topic (1,2,3) with one slide?</h3>
+</div>
+</div>
+<div id="outline-container-orgeee3acc" class="outline-2">
+<h2 id="orgeee3acc"><span class="section-number-2">7</span> Project plan</h2>
+<div class="outline-text-2" id="text-7">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Week</th>
+<th scope="col" class="org-left">Milestone(s)</th>
+<th scope="col" class="org-left">Demonstration</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">Pick our components</td>
+<td class="org-left">Reason choosing these parts</td>
+</tr>
+
+<tr>
+<td class="org-right">1-2</td>
+<td class="org-left">Hack the quadcopter</td>
+<td class="org-left">Controll the quadcopter with Arduino code</td>
+</tr>
+
+<tr>
+<td class="org-right">1-2</td>
+<td class="org-left">Mathematcial Formulation</td>
+<td class="org-left">Show our mathematical model</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-left">Sensor Fusion</td>
+<td class="org-left">Demonstrate angle change / vector graph</td>
+</tr>
+
+<tr>
+<td class="org-right">3-4</td>
+<td class="org-left">Control circuit for motor</td>
+<td class="org-left">Test: falling on desire side</td>
+</tr>
+
+<tr>
+<td class="org-right">3-4</td>
+<td class="org-left">Develop Matlab Simulation</td>
+<td class="org-left">Show simulation graph</td>
+</tr>
+
+<tr>
+<td class="org-right">5</td>
+<td class="org-left">Putting everything together</td>
+<td class="org-left">Show our modified quadcopter: video demo?</td>
+</tr>
+
+<tr>
+<td class="org-right">5-8</td>
+<td class="org-left">Controller Design</td>
+<td class="org-left">Show how quadcopter reacts with different controllers</td>
+</tr>
+
+<tr>
+<td class="org-right">9</td>
+<td class="org-left">End-to-end testing</td>
+<td class="org-left">Gather experimental results that supports our conclusion</td>
+</tr>
+
+<tr>
+<td class="org-right">10</td>
+<td class="org-left">Documentation</td>
+<td class="org-left">Document all our work</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="outline-container-org290ecb7" class="outline-3">
+<h3 id="org290ecb7"><span class="section-number-3">7.1</span> <span class="todo TODO">TODO</span> Create a Gantt chart based on the above table</h3>
+</div>
+</div>
+<div id="outline-container-orgf06a41c" class="outline-2">
+<h2 id="orgf06a41c"><span class="section-number-2">8</span> Expected Conclusion</h2>
+<div class="outline-text-2" id="text-8">
+<p>
+We would like to conclude that a off center spinning mass is able to steer the quadcopter using the system's dynamic; and that such principle can be apply on Rocket for more effective way of stering a rocket.
+</p>
+</div>
+<div id="outline-container-org7f38177" class="outline-3">
+<h3 id="org7f38177"><span class="section-number-3">8.1</span> <span class="todo TODO">TODO</span> PUTIT ON THE SLIDE! I am bad with wording, maybe refine the above sentence a bit / any missing conclusion you guys want to draw?</h3>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Wilson Chang</p>
+<p class="date">Created: 2018-03-14 Wed 13:36</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

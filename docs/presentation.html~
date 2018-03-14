@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title></title>
+<meta name="author" content="(Wilson Chang)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="./reveal.js/css/reveal.css"/>
+
+<link rel="stylesheet" href="./reveal.js/css/theme/moon.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = './reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h2 class="author">Wilson Chang</h2><p class="date">Created: 2018-03-14 Wed 13:35</p>
+</section>
+<section id="table-of-contents">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#/slide-org4471716">1. Resources</a></li>
+<li><a href="#/slide-org353c75c">2. Problem Statement</a></li>
+<li><a href="#/slide-org43cb20c">3. Motivation</a>
+<ul>
+<li><a href="#/slide-org672b83a">3.1. <span class="todo TODO">TODO</span> Add pictures to the slides &#x2013; structure of modern Rocket, look more into how modern Rocket operates</a></li>
+</ul>
+</li>
+<li><a href="#/slide-orgf43674b">4. Scope</a>
+<ul>
+<li><a href="#/slide-orgde216fc">4.1. <span class="todo TODO">TODO</span> Add quadcopter pics?</a></li>
+</ul>
+</li>
+<li><a href="#/slide-orgad7159b">5. Detailed Context / Related work</a>
+<ul>
+<li><a href="#/slide-org58d869a">5.1. <span class="todo TODO">TODO</span> Draw a box diagram for our system</a></li>
+<li><a href="#/slide-orgae00162">5.2. <span class="todo TODO">TODO</span> Maybe look more into Piccolissimo and relate the two?</a></li>
+</ul>
+</li>
+<li><a href="#/slide-org6ce7d51">6. Tasks breakdown, potential challenges</a>
+<ul>
+<li><a href="#/slide-orgea140a7">6.1. <span class="todo TODO">TODO</span> Put the above tasks breakdown in the slides? Each big topic (1,2,3) with one slide?</a></li>
+</ul>
+</li>
+<li><a href="#/slide-org9df8cc9">7. Project plan</a>
+<ul>
+<li><a href="#/slide-org4e68517">7.1. <span class="todo TODO">TODO</span> Create a Gantt chart based on the above table</a></li>
+</ul>
+</li>
+<li><a href="#/slide-org1914059">8. Expected Conclusion</a>
+<ul>
+<li><a href="#/slide-orgd2ed335">8.1. <span class="todo TODO">TODO</span> PUTIT ON THE SLIDE! I am bad with wording, maybe refine the above sentence a bit / any missing conclusion you guys want to draw?</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<section>
+<section id="slide-org4471716">
+<h2 id="org4471716"><span class="section-number-2">1</span> Resources</h2>
+<ul>
+<li><a href="https://drive.google.com/drive/u/0/folders/1Yxj9OBGIWcbHoHPgwoU0kEoxn_60bCrN">google drive folder</a></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org353c75c">
+<h2 id="org353c75c"><span class="section-number-2">2</span> Problem Statement</h2>
+<p>
+Underactuated flying vehicle that is more cost and energy efficient.
+</p>
+</section>
+</section>
+<section>
+<section id="slide-org43cb20c">
+<h2 id="org43cb20c"><span class="section-number-2">3</span> Motivation</h2>
+<p>
+Modern Rocket uses 2 DOF revolute joint to turn the nozzle to control the thrust. Challenges are it has to resist a very high temperature and the joint need a large amount of energy to keep the nozzle in a specific direction.
+Instead, a precisely controlled off-center mass in the front of the rocket can create a torque that steers the Rocket.
+</p>
+</section>
+<section id="slide-org672b83a">
+<h3 id="org672b83a"><span class="section-number-3">3.1</span> <span class="todo TODO">TODO</span> Add pictures to the slides &#x2013; structure of modern Rocket, look more into how modern Rocket operates</h3>
+</section>
+</section>
+<section>
+<section id="slide-orgf43674b">
+<h2 id="orgf43674b"><span class="section-number-2">4</span> Scope</h2>
+<p>
+In this project we will focus on the Mathematical Formulation and the design of controller. We will build on a working quadcopter where all 4 propellers will provide same constant thrust.
+</p>
+</section>
+<section id="slide-orgde216fc">
+<h3 id="orgde216fc"><span class="section-number-3">4.1</span> <span class="todo TODO">TODO</span> Add quadcopter pics?</h3>
+
+</section>
+</section>
+<section>
+<section id="slide-orgad7159b">
+<h2 id="orgad7159b"><span class="section-number-2">5</span> Detailed Context / Related work</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+</section>
+<section id="slide-org58d869a">
+<h3 id="org58d869a"><span class="section-number-3">5.1</span> <span class="todo TODO">TODO</span> Draw a box diagram for our system</h3>
+</section>
+<section id="slide-orgae00162">
+<h3 id="orgae00162"><span class="section-number-3">5.2</span> <span class="todo TODO">TODO</span> Maybe look more into <a href="https://www.upenn.edu/spotlights/meet-piccolissimo-worlds-smallest-self-powered-controllable-flying-vehicle">Piccolissimo</a> and relate the two?</h3>
+
+</section>
+</section>
+<section>
+<section id="slide-org6ce7d51">
+<h2 id="org6ce7d51"><span class="section-number-2">6</span> Tasks breakdown, potential challenges</h2>
+<ol>
+<li>Mathematical Formulation
+<ul>
+<li>Analysis of the system dynamic</li>
+<li>How does a spinning mass create torque</li>
+<li>How does the created torque affect the orientation of the system</li>
+<li>The desired roll / pitch angle for system stability</li>
+<li>The spinning mass dynamic</li>
+
+</ul></li>
+<li>Pick our components
+<ul>
+<li>Hackable Quadcopter</li>
+<li>A motor with pulse control that we can make the spinning mass stay longer in one direction</li>
+<li>What mass to attach? What arm to connect motor and mass?</li>
+<li>Mechanical device that enable us to mount our system on the Quadcopter: MAY NEED 3D PRINTING</li>
+<li>Microcontroller</li>
+<li>IMU for sensor measurements</li>
+<li>Wireless module for communication</li>
+<li>Battery</li>
+
+</ul></li>
+<li>Simulation environment: maybe challenging because we working in 3D
+<ul>
+<li>Simulation in Matlab</li>
+<li>State (orientation) estimation</li>
+<li>How does motor inputs generate torque and in turn affect the orientation</li>
+<li>Controller simulation</li>
+
+</ul></li>
+<li>Hack the quadcopter
+<ul>
+<li>Be able to control the 4 propellers using our wireless module thru our microcontroller</li>
+
+</ul></li>
+<li>Sensor Fusion
+<ul>
+<li>Configure the IMU, making use of accelerometer and gyroscope</li>
+<li>Determine the rate of roll/pitch angle change</li>
+
+</ul></li>
+<li>Control circuit for motor
+<ul>
+<li>make sure the motor is doing what it is supposed to before mounting it on quadcopter</li>
+<li>Design a test to show that the off-center mass is leaning on one side</li>
+
+</ul></li>
+<li>Putting it together
+<ul>
+<li>Integrate all our working components (wireless communication, motor pulse control, sensor fusion, simulation works)</li>
+<li>Mount it on the quadcopter</li>
+
+</ul></li>
+<li>Controller Design
+<ul>
+<li>Real experimental results should be available since we already built our system and mount it on quadcopter</li>
+<li>controls the input to the motor and the propellers, by taking in state estimation and sensor measurements</li>
+<li>Responsible to achieve the desired roll/pitch angle to steer the vehicle</li>
+<li>Moreover, to stabilize the quadcopter from a moving position.</li>
+
+</ul></li>
+<li>End-to-End testing</li>
+<li>Documentation</li>
+
+</ol>
+</section>
+<section id="slide-orgea140a7">
+<h3 id="orgea140a7"><span class="section-number-3">6.1</span> <span class="todo TODO">TODO</span> Put the above tasks breakdown in the slides? Each big topic (1,2,3) with one slide?</h3>
+</section>
+</section>
+<section>
+<section id="slide-org9df8cc9">
+<h2 id="org9df8cc9"><span class="section-number-2">7</span> Project plan</h2>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Week</th>
+<th scope="col" class="org-left">Milestone(s)</th>
+<th scope="col" class="org-left">Demonstration</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">Pick our components</td>
+<td class="org-left">Reason choosing these parts</td>
+</tr>
+
+<tr>
+<td class="org-right">1-2</td>
+<td class="org-left">Hack the quadcopter</td>
+<td class="org-left">Controll the quadcopter with Arduino code</td>
+</tr>
+
+<tr>
+<td class="org-right">1-2</td>
+<td class="org-left">Mathematcial Formulation</td>
+<td class="org-left">Show our mathematical model</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-left">Sensor Fusion</td>
+<td class="org-left">Demonstrate angle change / vector graph</td>
+</tr>
+
+<tr>
+<td class="org-right">3-4</td>
+<td class="org-left">Control circuit for motor</td>
+<td class="org-left">Test: falling on desire side</td>
+</tr>
+
+<tr>
+<td class="org-right">3-4</td>
+<td class="org-left">Develop Matlab Simulation</td>
+<td class="org-left">Show simulation graph</td>
+</tr>
+
+<tr>
+<td class="org-right">5</td>
+<td class="org-left">Putting everything together</td>
+<td class="org-left">Show our modified quadcopter: video demo?</td>
+</tr>
+
+<tr>
+<td class="org-right">5-8</td>
+<td class="org-left">Controller Design</td>
+<td class="org-left">Show how quadcopter reacts with different controllers</td>
+</tr>
+
+<tr>
+<td class="org-right">9</td>
+<td class="org-left">End-to-end testing</td>
+<td class="org-left">Gather experimental results that supports our conclusion</td>
+</tr>
+
+<tr>
+<td class="org-right">10</td>
+<td class="org-left">Documentation</td>
+<td class="org-left">Document all our work</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="slide-org4e68517">
+<h3 id="org4e68517"><span class="section-number-3">7.1</span> <span class="todo TODO">TODO</span> Create a Gantt chart based on the above table</h3>
+</section>
+</section>
+<section>
+<section id="slide-org1914059">
+<h2 id="org1914059"><span class="section-number-2">8</span> Expected Conclusion</h2>
+<p>
+We would like to conclude that a off center spinning mass is able to steer the quadcopter using the system's dynamic; and that such principle can be apply on Rocket for more effective way of stering a rocket.
+</p>
+</section>
+<section id="slide-orgd2ed335">
+<h3 id="orgd2ed335"><span class="section-number-3">8.1</span> <span class="todo TODO">TODO</span> PUTIT ON THE SLIDE! I am bad with wording, maybe refine the above sentence a bit / any missing conclusion you guys want to draw?</h3>
+</section>
+</section>
+</div>
+</div>
+<script src="./reveal.js/lib/js/head.min.js"></script>
+<script src="./reveal.js/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: './reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: './reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: './reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>
